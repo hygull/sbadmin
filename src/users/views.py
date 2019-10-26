@@ -68,7 +68,7 @@ class LogoutView(APIView):
 
 class ButtonsView(APIView):
 	def get(self, request, *args, **kwargs):
-		return render(request, "theme/page_not_found.html", {})
+		return render(request, "theme/buttons.html", {})
 
 	def post(self, request, *args, **kwargs):
 
