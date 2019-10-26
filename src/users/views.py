@@ -30,6 +30,16 @@ class ForgotPasswordView(APIView):
 		return Response({'status': 200})
 
 
+class LogoutView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/forgot-password.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+
+
 class DashboardView(APIView):
 	def get(self, request, *args, **kwargs):
 		return render(request, "users/dashboard.html", {})
