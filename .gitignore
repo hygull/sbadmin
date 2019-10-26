@@ -109,3 +109,4 @@ root
 root/*
 .DS_Store
 temp
+*_saved.*
