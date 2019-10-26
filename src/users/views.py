@@ -39,6 +39,30 @@ class LogoutView(APIView):
 		return Response({'status': 200})
 
 
+class ChartsView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/charts.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+class TablesView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/tables.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+class LogoutView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/forgot-password.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
 
 class DashboardView(APIView):
 	def get(self, request, *args, **kwargs):
