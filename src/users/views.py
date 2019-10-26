@@ -5,15 +5,6 @@ from rest_framework.response import Response
 
 class LoginView(APIView):
 	def get(self, request, *args, **kwargs):
-		return render(request, "theme/index.html", {})
-
-	def post(self, request, *args, **kwargs):
-
-		return Response({'status': 200})
-
-
-class LoginView(APIView):
-	def get(self, request, *args, **kwargs):
 		return render(request, "theme/login.html", {})
 
 	def post(self, request, *args, **kwargs):
@@ -32,7 +23,7 @@ class RegisterView(APIView):
 
 class ForgotPasswordView(APIView):
 	def get(self, request, *args, **kwargs):
-		return render(request, "users/forgot_password.html", {})
+		return render(request, "theme/forgot-password.html", {})
 
 	def post(self, request, *args, **kwargs):
 
