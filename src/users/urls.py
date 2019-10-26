@@ -15,6 +15,6 @@ urlpatterns = [
 
     re_path(r'^charts/$', views.ChartsView.as_view(), name="charts_url"),
 
-    re_path(r'^tables/$', views.ChartsView.as_view(), name="tables_url"),
+    re_path(r'^tables/$', views.TablesView.as_view(), name="tables_url"),
 
 ]
