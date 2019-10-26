@@ -18,18 +18,20 @@
 
   <!-- Custom styles for this template-->
   <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
-  <style type="text/css">
-    body {
-      /* Background image */
-      background-image: linear-gradient(180deg,#edeff5 10%,#99dec1 100%)
-    }
-  </style>
+
+  <!--Added-->
+  <link rel="stylesheet" type="text/css" href="{% static 'coded/css/base_x.css' %}">
+
+  {% block css %}
+  {% endblock %}
+
+  {% block js_head %}
+  {% endblock %}
 </head>
 
 <body> <!-- class="bg-gradient-primary" -->
 
   {% block container %}
-
   {% endblock %}
 
   <!-- Bootstrap core JavaScript-->
@@ -42,6 +44,8 @@
   <!-- Custom scripts for all pages-->
   <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
 
+  {% block js_body %}
+  {% endblock %}
 </body>
 
 </html>

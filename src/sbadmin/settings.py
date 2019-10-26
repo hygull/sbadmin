@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "ui", "static", "root")
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "ui", "static", "files", "theme"),
-    os.path.join(BASE_DIR, "ui", "static", "files", "sbadmin"),
+    os.path.join(BASE_DIR, "ui", "static", "files", "app"),
 )
 
 # Media files
