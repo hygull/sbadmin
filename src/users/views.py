@@ -47,6 +47,7 @@ class ChartsView(APIView):
 
 		return Response({'status': 200})
 
+
 class TablesView(APIView):
 	def get(self, request, *args, **kwargs):
 		return render(request, "theme/tables.html", {})
@@ -54,6 +55,7 @@ class TablesView(APIView):
 	def post(self, request, *args, **kwargs):
 
 		return Response({'status': 200})
+
 
 class LogoutView(APIView):
 	def get(self, request, *args, **kwargs):
@@ -72,6 +74,7 @@ class ButtonsView(APIView):
 
 		return Response({'status': 200})
 
+
 class PageNotFoundView(APIView):
 	def get(self, request, *args, **kwargs):
 		return render(request, "theme/404.html", {})
@@ -80,6 +83,7 @@ class PageNotFoundView(APIView):
 
 		return Response({'status': 200})
 
+
 class BlankView(APIView):
 	def get(self, request, *args, **kwargs):
 		return render(request, "theme/blank.html", {})
@@ -87,6 +91,43 @@ class BlankView(APIView):
 	def post(self, request, *args, **kwargs):
 
 		return Response({'status': 200})
+
+
+class ColorsView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/utilities-color.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+
+class BordersView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/utilities-border.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+
+class AnimationsView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/utilities-animation.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+
+class OthersView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/utilities-other.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
 
 
 class DashboardView(APIView):

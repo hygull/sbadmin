@@ -79,10 +79,10 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
+            <a class="collapse-item" href="{% url 'users:colors_url' %}">Colors</a>
+            <a class="collapse-item" href="{% url 'users:borders_url' %}">Borders</a>
+            <a class="collapse-item" href="{% url 'users:animations_url' %}">Animations</a>
+            <a class="collapse-item" href="{% url 'users:others_url' %}">Other</a>
           </div>
         </div>
       </li>
@@ -106,7 +106,7 @@
             <h6 class="collapse-header">Login Screens:</h6>
             <a class="collapse-item" href="{% url 'users:login_url' %}">Login</a>
             <a class="collapse-item" href="{% url 'users:register_url' %}">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+            <a class="collapse-item" href="{% url 'users:forgot_password_url' %}">Forgot Password</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Other Pages:</h6>
             <a class="collapse-item" href="{% url 'users:page_not_found_url' %}">404 Page</a>
