@@ -25,7 +25,7 @@ SECRET_KEY = 'e@5_iimc81ky$3b33m57_q))&$j*5njp-q$9a*(m(zvw(h%dz#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # 3rd party apps
+    "rest_framework",
 
+    # User apps
     "users.apps.UsersConfig",
 ]
 
@@ -121,7 +124,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "ui", "static", "root")
-STATICFILES_DIRS = os.path.join(BASE_DIR, "ui", "static", "files")
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "ui", "static", "files", "theme"),
+    os.path.join(BASE_DIR, "ui", "static", "files", "tradeflowsystem"),
+)
 
 # Media files
 MEDIA_URL = "/media/"
