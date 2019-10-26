@@ -12,9 +12,18 @@ class LoginView(APIView):
 		return Response({'status': 200})
 
 
-class SignUpView(APIView):
+class LoginView(APIView):
 	def get(self, request, *args, **kwargs):
-		return render(request, "users/signup.html", {})
+		return render(request, "theme/login.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+
+class RegisterView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/register.html", {})
 
 	def post(self, request, *args, **kwargs):
 
