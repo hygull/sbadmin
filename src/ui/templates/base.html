@@ -93,6 +93,12 @@
 
         <!-- Page level custom scripts (Only for charts page) -->
         <script src="{% static 'js/demo/chart-bar-demo.js' %}"></script>
+
+        <!-- Data Tables (Only for tables page)-->
+        <script src="{% static 'vendor/datatables/jquery.dataTables.min.js' %}"></script>
+        <script src="{% static 'vendor/datatables/dataTables.bootstrap4.min.js' %}"></script>
+        <script src="{% static 'js/demo/datatables-demo.js' %}"></script>
+
         {% block js_body %}
 
         {% endblock %}
