@@ -57,3 +57,9 @@
     </div>
 </div>
 {% endblock %}
+
+{% block js_body %} 
+    {% include 'theme/components/charts_scripts.html' %}
+    <!-- Page level custom scripts (Only for charts page) -->
+    <script src="{% static 'js/demo/chart-bar-demo.js' %}"></script>
+{% endblock %}
