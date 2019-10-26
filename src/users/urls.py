@@ -17,4 +17,10 @@ urlpatterns = [
 
     re_path(r'^tables/$', views.TablesView.as_view(), name="tables_url"),
 
+    re_path(r'^buttons/$', views.ButtonsView.as_view(), name="buttons_url"),
+
+	re_path(r'^page_not_found/$', views.PageNotFoundView.as_view(), name="page_not_found_url"),    
+
+	re_path(r'^blank/$', views.BlankView.as_view(), name="blank_page_url"),    
+
 ]

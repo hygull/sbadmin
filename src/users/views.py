@@ -64,6 +64,31 @@ class LogoutView(APIView):
 		return Response({'status': 200})
 
 
+class ButtonsView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/page_not_found.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+class PageNotFoundView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/404.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+class BlankView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/blank.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+
 class DashboardView(APIView):
 	def get(self, request, *args, **kwargs):
 		return render(request, "users/dashboard.html", {})
