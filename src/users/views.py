@@ -75,6 +75,15 @@ class ButtonsView(APIView):
 		return Response({'status': 200})
 
 
+class CardsView(APIView):
+	def get(self, request, *args, **kwargs):
+		return render(request, "theme/cards.html", {})
+
+	def post(self, request, *args, **kwargs):
+
+		return Response({'status': 200})
+
+
 class PageNotFoundView(APIView):
 	def get(self, request, *args, **kwargs):
 		return render(request, "theme/404.html", {})
