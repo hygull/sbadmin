@@ -15,37 +15,35 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="p-5">
                         <div class="text-center">
-                            <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                            <h1 class="h4 text-gray-900 mb-4">Create An Account!</h1>
                         </div>
                         <form class="user">
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="First Name">
+                                    <label for="first_name">First name</label>
+                                    <input type="text" class="form-control form-control-user" id="first_name" placeholder="First Name" value="Wes">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Last Name">
+                                    <label for="last_name">Last name</label>
+                                    <input type="text" class="form-control form-control-user" id="last_name" placeholder="Last Name" value="McKinney">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control form-control-user" id="email" placeholder="Email Address" value="wes@gmail.com">
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control form-control-user" id="password" placeholder="Password" value="Wes@123">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+                                    <label for="conf_password">Confirm Password</label>
+                                    <input type="password" class="form-control form-control-user" id="conf_password" placeholder="Repeat Password" value="Wes@123">
                                 </div>
                             </div>
                             <a href="{% url 'users:login_url' %}" class="btn btn-primary btn-user btn-block">
                             Register Account
-                            </a>
-                            <hr>
-                            <a href="{% url 'index_url' %}" class="btn btn-google btn-user btn-block">
-                            <i class="fab fa-google fa-fw"></i> Register with Google
-                            </a>
-                            <a href="{% url 'index_url' %}" class="btn btn-facebook btn-user btn-block">
-                            <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
                             </a>
                         </form>
                         <hr>
@@ -70,4 +68,3 @@
       })
   </script>
 {% endblock %}
- $('.login-top-right-link').addClass('active-nav-link-x')
