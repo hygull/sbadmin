@@ -27,3 +27,22 @@ Any of the following best fits to describe this project.
 + Views are defined at [src/users/views.py](src/users/views.py) , [src/sbadmin/views.py](src/sbadmin/views.py).
 + Theme related code is separate from user implemenetd code. Also user can add his own template & static files separately.
 
+
+## How to run?
+
+Just follow the below steps to run this project. Make sure you have 
+
++ Python3+ is installed
++ **virtualenv** Python package is installed 
+
++ `git clone https://github.com/hygull/sbadmin.git`
++ `cd sbadmin`
++ `virtualenv venv`
++ `source/bin/activate` on Linux/MAC OS X, `.\venv\Scripts\activate` on Windows
++ `pip install -r requirements.txt`
++ `cd src`
++ `python manage.py runserver`
+
+Visit [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
+Go to this page and open.
