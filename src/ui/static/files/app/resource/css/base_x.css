@@ -10,3 +10,7 @@ body {
 #site-logo-x {
 	width: 100px;height: auto;
 }
+
+.active-nav-link-x {
+	background-color: gray;
+}

@@ -14,12 +14,12 @@
                     <!-- Nested Row within Card Body -->
                     <div class="row">
                         <!--
-                        <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                          <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
                         -->
                         <div class="col-lg-8 offset-lg-2">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">Welcome Back2!</h1>
+                                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                 </div>
                                 <form class="user">
                                     <div class="form-group">
@@ -35,7 +35,7 @@
                                         </div>
                                     </div>
                                     <a href="{% url 'index_url' %}" class="btn btn-primary btn-user btn-block">
-                                    Login
+                                      Login
                                     </a>
                                     <hr>
                                     <a href="{% url 'index_url' %}" class="btn btn-google btn-user btn-block">
@@ -47,10 +47,13 @@
                                 </form>
                                 <hr>
                                 <div class="text-center">
-                                    <a class="small" href="{% url 'users:forgot_password_url' %}">Forgot Password?</a>
+                                    <a class="small" href="{% url 'users:forgot_password_url' %}">
+                                      Forgot Password?
+                                    </a>
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="{% url 'users:register_url' %}">Create an Account!</a>
+                                    <a class="small" href="{% url 'users:register_url' %}">  Create an Account!
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -60,4 +63,12 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block js_body %}
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $('.login-top-right-link').addClass('active-nav-link-x')
+      })
+  </script>
 {% endblock %}

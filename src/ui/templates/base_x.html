@@ -45,7 +45,14 @@
 
   <!-- Custom scripts for all pages-->
   <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
-
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('.data-top-right-link').click(function() {
+            let next_location = $(this).find('a').attr('href')
+            location.href = next_location
+        })
+    })
+  </script>
   {% block js_body %}
   {% endblock %}
 </body>

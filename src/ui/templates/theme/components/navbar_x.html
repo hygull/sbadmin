@@ -8,7 +8,7 @@
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
         <!-- Nav Item - Alerts -->
-        <li class="nav-item dropdown no-arrow mx-1">
+        <li class="nav-item dropdown no-arrow mx-1 data-top-right-link login-top-right-link">
             <a class="nav-link dropdown-toggle" href="{% url 'users:login_url' %}" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span>Login</span>
                 <!-- Counter - Alerts -->
@@ -18,8 +18,8 @@
             </a>
         </li>
 
-        <li class="nav-item dropdown no-arrow mx-1">
-            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown no-arrow mx-1 data-top-right-link register-top-right-link">
+            <a class="nav-link dropdown-toggle" href="{% url 'users:register_url' %}" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span>Register</span>
 
                 <!-- Counter - Alerts -->
