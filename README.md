@@ -56,7 +56,7 @@ Now, just follow the below steps to run this project.
 
 + **`git clone https://github.com/hygull/sbadmin.git`**
 + **`cd sbadmin`**
-+ **`virtualenv venv`**
++ **`virtualenv venv`** OR `python3 -m virtualenv venv`  OR `python3.6 -m virtualenv venv` etc.
 + **`source venv/bin/activate`** on Linux/MAC OS X, **`.\venv\Scripts\activate`** on Windows
 + **`pip install -r requirements.txt`**
 + **`cd src`**

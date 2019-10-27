@@ -1,6 +1,11 @@
+html {
+  height: 100vh;
+}
+
 body {
 	/* Background image */
-	background-image: linear-gradient(180deg,#edeff5 10%,#99dec1 100%)
+	/*background-image: linear-gradient(180deg,#edeff5 10%,#99dec1 100%);*/
+	min-height: 100vh;
 }
 
 .bg-white {
@@ -14,3 +19,4 @@ body {
 .active-nav-link-x {
 	background-color: gray;
 }
+
