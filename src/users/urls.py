@@ -5,7 +5,7 @@ app_name = "users"
 
 
 urlpatterns = [
-   	# Login
+   	# Login, Register, Forgot password, Logout
     re_path(r'^login/$', views.LoginView.as_view(), name="login_url"),
     re_path(r'^register/$', views.RegisterView.as_view(), name="register_url"),
     re_path(r'^forgot-password/$', views.ForgotPasswordView.as_view(), name="forgot_password_url"),
@@ -31,6 +31,5 @@ urlpatterns = [
 	re_path(r'^animations/$', views.AnimationsView.as_view(), name="animations_url"),    
 
 	re_path(r'^others/$', views.OthersView.as_view(), name="others_url"),    
-
 
 ]

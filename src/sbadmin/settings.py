@@ -69,7 +69,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
 
-                'sbadmin.context_processors.website_configuration_parameters',
+                'users.context_processors.website_configuration_parameters',
             ],
         },
     },
