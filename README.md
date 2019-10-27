@@ -16,7 +16,7 @@ Any of the following best fits to describe this project.
 | Django | 2.2.6 | Backend, Python's high level web framework |
 | Bootstrap | 4 | Frontend, CSS framework |
 
-### Features
+## Features
 
 + Django templating langauge (DTL) is used for template code re-structuring.
 + Redundant code has been removed from [Sb Admin 2](https://startbootstrap.com/themes/sb-admin-2/) template pages.
@@ -24,5 +24,6 @@ Any of the following best fits to describe this project.
 + Urls defined in all pages are fully dynamic so changing url in **urls.py** will not force you tomake change in templates. Just one change is enough. 
 + Almost all urls can be found at [src/users/urls.py](src/users/urls.py) which starts with `/users/`.
 + Only the urls related to **Django admin site** (starts with `/admin/`) and **Index page** (`/`) is defined at [src/sbadmin/urls.py](src/sbadmin/urls.py).
-+ Views are defined at [src/users/views.py](src/users/views.py) , [src/sbadmin/views.py](src/users/views.py).
++ Views are defined at [src/users/views.py](src/users/views.py) , [src/sbadmin/views.py](src/sbadmin/views.py).
 + Theme related code is separate from user implemenetd code. Also user can add his own template & static files separately.
+
