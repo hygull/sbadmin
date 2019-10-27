@@ -8,7 +8,14 @@ Any of the following best fits to describe this project.
 
 + A full integration of free Admin template available at [https://startbootstrap.com/themes/sb-admin-2/](https://startbootstrap.com/themes/sb-admin-2/) and named as [Sb Amdin 2](https://startbootstrap.com/themes/sb-admin-2/).
 
-## Tech stack
+## Table of contents
+
++ [Tech stack](#tech-stack)
++ [Features](#features)
++ [Templates & static files directories](#template-and-static-files-directories)
++ [How to run?](#how-to-run)
+
+<h2 id="tech-stack">Tech stack</h2>
 
 | Language/Framework | Version | End | 
 | --- | --- | --- |
@@ -16,7 +23,7 @@ Any of the following best fits to describe this project.
 | Django | 2.2.6 | Backend, Python's high level web framework |
 | Bootstrap | 4 | Frontend, CSS framework |
 
-## Features
+<h2 id="features">Features</h2>
 
 + Django templating langauge (DTL) is used for template code re-structuring.
 + Redundant code has been removed from [Sb Admin 2](https://startbootstrap.com/themes/sb-admin-2/) template pages.
@@ -27,7 +34,7 @@ Any of the following best fits to describe this project.
 + Views are defined at [src/users/views.py](src/users/views.py) , [src/sbadmin/views.py](src/sbadmin/views.py).
 + Theme related code is separate from user implemenetd code. Also user can add his own template & static files separately.
 
-## Templates & static files directories
+<h2 id="template-and-static-files-directories">Templates & static files directories</h2>
 
 + Templates (HTML files) are under [src/ui/templates](src/ui/templates).
 
@@ -38,7 +45,7 @@ Any of the following best fits to describe this project.
 	> **Note:** Here the main intention of creating **resource** inside **app** directory is to get rid of conflicts when Django searchs for static files after looking into **STATICFILES_DIRS** setting variable's values (i.e. paths which points to directories where Django looks for static  files) in order & there are 2 files with same name in 2 different **js**/**css**/**img** etc. directories.
 
 
-## How to run?
+<h2 id="how-to-run">How to run?</h2>
 
 Make sure you have 
 
