@@ -27,20 +27,28 @@ Any of the following best fits to describe this project.
 + Views are defined at [src/users/views.py](src/users/views.py) , [src/sbadmin/views.py](src/sbadmin/views.py).
 + Theme related code is separate from user implemenetd code. Also user can add his own template & static files separately.
 
+## Templates & static files directories
+
++ Templates (HTML files) are under [src/ui/templates](src/ui/templates).
+
++ All static files (JS, css, scss, images etc.) are under [src/ui/static/files](src/ui/static/files), which is further sub divided in 2 directories.
+	+ **theme** which is [src/ui/static/files/theme](src/ui/static/files/theme) holds all static files related to [Sb Admin 2](https://startbootstrap.com/themes/sb-admin-2/) theme.
+	+ **app** which is [src/ui/static/files/app](src/ui/static/files/app) holds all static files created by developer. Under this, you can manage your files under **css**, **js**, **img**, **logos** directories. 
+
 
 ## How to run?
 
 Make sure you have 
 
 + Python3+ installed in your system
-+ **virtualenv** Python package is installed (will allow to create virtualenv)
++ **virtualenv** Python package is installed (It will allow to create virtualenv)
 
 Now, just follow the below steps to run this project. 
 
 + `git clone https://github.com/hygull/sbadmin.git`
 + `cd sbadmin`
 + `virtualenv venv`
-+ `source/bin/activate` on Linux/MAC OS X, `.\venv\Scripts\activate` on Windows
++ `source venv/bin/activate` on Linux/MAC OS X, `.\venv\Scripts\activate` on Windows
 + `pip install -r requirements.txt`
 + `cd src`
 + `python manage.py runserver`
