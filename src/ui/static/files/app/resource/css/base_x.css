@@ -1,0 +1,12 @@
+body {
+	/* Background image */
+	background-image: linear-gradient(180deg,#edeff5 10%,#99dec1 100%)
+}
+
+.bg-white {
+    background-color: #1a1b1a!important;
+}
+
+#site-logo-x {
+	width: 100px;height: auto;
+}

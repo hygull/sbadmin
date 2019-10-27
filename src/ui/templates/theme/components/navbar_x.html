@@ -1,0 +1,32 @@
+{% load static %}
+
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    <div class="d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100">
+        <img class="img-responsive" src="{% static 'resource/logos/hygull_bg_1a1b1a.png' %}" id='site-logo-x'>
+    </div>
+
+    <!-- Topbar Navbar -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Nav Item - Alerts -->
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="{% url 'users:login_url' %}" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Login</span>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">
+                    <i class="fas fa-sign-in-alt fa-fw"></i>
+                </span>
+            </a>
+        </li>
+
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Register</span>
+
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">
+                    <i class="fas fa-user-plus fa-fw"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>

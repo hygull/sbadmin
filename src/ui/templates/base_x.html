@@ -20,7 +20,7 @@
   <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
 
   <!--Added-->
-  <link rel="stylesheet" type="text/css" href="{% static 'coded/css/base_x.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'resource/css/base_x.css' %}">
 
   {% block css %}
   {% endblock %}
@@ -30,6 +30,8 @@
 </head>
 
 <body> <!-- class="bg-gradient-primary" -->
+  {% include 'theme/components/navbar_x.html' %}
+
 
   {% block container %}
   {% endblock %}
