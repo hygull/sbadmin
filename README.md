@@ -33,7 +33,7 @@ Any of the following best fits to describe this project.
 
 + All static files (JS, css, scss, images etc.) are under [src/ui/static/files](src/ui/static/files), which is further sub divided in 2 directories.
 	+ **theme** which is [src/ui/static/files/theme](src/ui/static/files/theme) holds all static files related to [Sb Admin 2](https://startbootstrap.com/themes/sb-admin-2/) theme.
-	+ **app/resource** which is [src/ui/static/files/app](src/ui/static/files/app) holds all static files created by developer. Under this, you can manage your files under **css**, **js**, **img**, **logos** directories. 
+	+ **app/resource** which is [src/ui/static/files/app/resource](src/ui/static/files/app/resource) holds all static files created by developer. Under this, you can manage your files under **css**, **js**, **img**, **logos** directories. 
 
 	> **Note:** Here the main intention of creating **resource** inside **app** directory is to get rid of conflicts when Django searchs for static files after looking into **STATICFILES_DIRS** setting variable's values (i.e. paths which points to directories where Django looks for static  files) in order & there are 2 files with same name in 2 different **js**/**css**/**img** etc. directories.
 
