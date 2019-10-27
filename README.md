@@ -30,10 +30,12 @@ Any of the following best fits to describe this project.
 
 ## How to run?
 
-Just follow the below steps to run this project. Make sure you have 
+Make sure you have 
 
-+ Python3+ is installed
-+ **virtualenv** Python package is installed 
++ Python3+ installed in your system
++ **virtualenv** Python package is installed (will allow to create virtualenv)
+
+Now, just follow the below steps to run this project. 
 
 + `git clone https://github.com/hygull/sbadmin.git`
 + `cd sbadmin`
@@ -44,5 +46,3 @@ Just follow the below steps to run this project. Make sure you have
 + `python manage.py runserver`
 
 Visit [http://127.0.0.1:8000](http://127.0.0.1:8000).
-
-Go to this page and open.
