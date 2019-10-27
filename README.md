@@ -43,16 +43,16 @@ Any of the following best fits to describe this project.
 Make sure you have 
 
 + Python3+ installed in your system
-+ **virtualenv** Python package is installed (It will allow to create virtualenv)
++ **virtualenv** Python package is installed (It will allow you to run **virtualenv** command to create virtual environment)
 
 Now, just follow the below steps to run this project. 
 
-+ `git clone https://github.com/hygull/sbadmin.git`
-+ `cd sbadmin`
-+ `virtualenv venv`
-+ `source venv/bin/activate` on Linux/MAC OS X, `.\venv\Scripts\activate` on Windows
-+ `pip install -r requirements.txt`
-+ `cd src`
-+ `python manage.py runserver`
++ **`git clone https://github.com/hygull/sbadmin.git`**
++ **`cd sbadmin`**
++ **`virtualenv venv`**
++ **`source venv/bin/activate`** on Linux/MAC OS X, **`.\venv\Scripts\activate`** on Windows
++ **`pip install -r requirements.txt`**
++ **`cd src`**
++ **`python manage.py runserver`**
 
 Now, visit [http://127.0.0.1:8000](http://127.0.0.1:8000) and play.
