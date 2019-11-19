@@ -55,11 +55,13 @@ Make sure you have
 Now, just follow the below steps to run this project. 
 
 + **`git clone https://github.com/hygull/sbadmin.git`**
-+ **`cd sbadmin`**
 + **`virtualenv venv`** OR `python3 -m virtualenv venv`  OR `python3.6 -m virtualenv venv` etc.
 + **`source venv/bin/activate`** on Linux/MAC OS X, **`.\venv\Scripts\activate`** on Windows
++ **`cd sbadmin`**
 + **`pip install -r requirements.txt`**
 + **`cd src`**
 + **`python manage.py runserver`**
 
-Now, visit [http://127.0.0.1:8000](http://127.0.0.1:8000) and play.
+Now, visit [http://127.0.0.1:8000](http://127.0.0.1:8000) and play. Later, you can write your own views and implement the functionality.
+
+
