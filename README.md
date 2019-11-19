@@ -33,6 +33,7 @@ Any of the following best fits to describe this project.
 + Only the urls related to **Django admin site** (starts with `/admin/`) and **Index page** (`/`) is defined at [src/sbadmin/urls.py](src/sbadmin/urls.py).
 + Views are defined at [src/users/views.py](src/users/views.py) , [src/sbadmin/views.py](src/sbadmin/views.py).
 + Theme related code is separate from user implemenetd code. Also user can add his own template & static files separately.
++ Navbar has been for login/register/forgot_passord pages (These 3 extends the same base_x.html).
 
 <h2 id="template-and-static-files-directories">Templates & static files directories</h2>
 
@@ -70,7 +71,7 @@ Here are few scrennshots related to the integrated theme.
 
 > ### Register
 
-![Register](docs/screenshots/regsiter.png)
+![Register](docs/screenshots/register.png)
 
 > ### Login
 
