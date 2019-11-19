@@ -64,4 +64,36 @@ Now, just follow the below steps to run this project.
 
 Now, visit [http://127.0.0.1:8000](http://127.0.0.1:8000) and play. Later, you can write your own views and implement the functionality.
 
+<h2 id="screenshots">Screenshots</h2>
+
+Here are few scrennshots related to the integrated theme.
+
+> ### Register
+
+![Register](docs/screenshots/regsiter.png)
+
+> ### Login
+
+![Login](docs/screenshots/login.png)
+
+> ### Forgot Password
+
+![Forgot Password](docs/screenshots/forgot_password.png)
+
+> ### Dashboard
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+> ### Tables
+
+![Tables](docs/screenshots/tables.png)
+
+> ### Colors & Notifications
+
+![Colors & Notifications](docs/screenshots/colors_notifications.png)
+
+> ### Charts
+
+![Charts](docs/screenshots/charts.png)
+
 
