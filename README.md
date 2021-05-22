@@ -28,7 +28,7 @@ Any of the following best fits to describe this project.
 + Django templating langauge (DTL) is used for template code re-structuring.
 + Redundant code has been removed from [Sb Admin 2](https://startbootstrap.com/themes/sb-admin-2/) template pages.
 + UI code is completely separate from backend code i.e. in [src/ui](src/ui).
-+ Urls defined in all pages are fully dynamic so changing url in **urls.py** will not force you tomake change in templates. Just one change is enough. 
++ Urls defined in all pages are fully dynamic so changing url in **urls.py** will not force you to make change in templates. Just one change is enough. 
 + Almost all urls can be found at [src/users/urls.py](src/users/urls.py) which starts with `/users/`.
 + Only the urls related to **Django admin site** (starts with `/admin/`) and **Index page** (`/`) is defined at [src/sbadmin/urls.py](src/sbadmin/urls.py).
 + Views are defined at [src/users/views.py](src/users/views.py) , [src/sbadmin/views.py](src/sbadmin/views.py).
