@@ -61,6 +61,7 @@ Now, just follow the below steps to run this project.
 + **`cd sbadmin`**
 + **`pip install -r requirements.txt`**
 + **`cd src`**
++ **`python manage.py migrate`**
 + **`python manage.py runserver`**
 
 Now, visit [http://127.0.0.1:8000](http://127.0.0.1:8000) and play. Later, you can write your own views and implement the functionality.
